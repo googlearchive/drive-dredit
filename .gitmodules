@@ -1,0 +1,3 @@
+[submodule "php/public"]
+	path = php/public
+	url = git@github.com:googledrive/dredit-frontend.git
