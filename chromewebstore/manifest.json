@@ -1,0 +1,15 @@
+{
+  "name" : "DrEdit",
+  "version" : "1",
+  "description" : "Text editor",
+  "container" : "GOOGLE_DRIVE",
+  "api_console_project_id" : "[[YOUR_API_PROJECT_ID]]",
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "app" : {
+    "launch" : {
+      "web_url" : "[[YOUR_WEB_APP_URL]]"
+    }
+  }
+}
