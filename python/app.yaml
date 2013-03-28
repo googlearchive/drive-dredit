@@ -1,0 +1,25 @@
+application: dredit-python
+version: 2
+runtime: python
+api_version: 1
+
+handlers:
+
+# public/index.html should not be under a static directory.
+- url: /public/partials
+  static_dir: public/partials
+
+- url: /public/css
+  static_dir: public/css
+
+- url: /public/img
+  static_dir: public/img
+
+- url: /public/lib
+  static_dir: public/lib
+
+- url: /public/js
+  static_dir: public/js
+
+- url: /.*
+  script: main.py
