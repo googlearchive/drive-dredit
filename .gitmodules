@@ -4,3 +4,6 @@
 [submodule "python/public"]
 	path = python/public
 	url = git@github.com:googledrive/dredit-frontend.git
+[submodule "java/war/public"]
+	path = java/war/public
+	url = git@github.com:googledrive/dredit-frontend.git
