@@ -57,11 +57,9 @@ $service = new Google_DriveService($client);
  * Gets the metadata and contents for the given file_id.
  */
 $app->get('/svc', function() use ($app, $client, $service) {
-
   checkUserAuthentication($app);
   checkRequiredQueryParams($app, array('file_id'));
   $fileId = $app->request()->get('file_id');
-
   try {
     // Retrieve metadata for the file specified by $fileId.
     $file = $service->files->get($fileId);
@@ -75,7 +73,6 @@ $app->get('/svc', function() use ($app, $client, $service) {
   } catch (Exception $ex) {
     renderEx($app, $ex);
   }
-
 });
 
 /**
@@ -83,10 +80,8 @@ $app->get('/svc', function() use ($app, $client, $service) {
  * in the request body. Requires login.
  */
 $app->post('/svc', function() use ($app, $client, $service) {
-
   checkUserAuthentication($app);
   $inputFile = json_decode($app->request()->getBody());
-
   try {
     $file = new Google_DriveFile();
     $file->setTitle($inputFile->title);
@@ -106,7 +101,6 @@ $app->post('/svc', function() use ($app, $client, $service) {
   } catch (Exception $ex) {
     renderEx($app, $ex);
   }
-
 });
 
 /**
@@ -114,11 +108,9 @@ $app->post('/svc', function() use ($app, $client, $service) {
  * with the file id. Requires login.
  */
 $app->put('/svc', function() use ($app, $client, $service) {
-
   checkUserAuthentication($app);
   $inputFile = json_decode($app->request()->getBody());
   $fileId = $inputFile->id;
-
   try {
     // Retrieve metadata for the file specified by $fileId and modify it with
     // the new changes.
@@ -136,24 +128,20 @@ $app->put('/svc', function() use ($app, $client, $service) {
   } catch (Exception $ex) {
     renderEx($app, $ex);
   }
-
 });
 
 /**
  * Gets user profile. Requires login.
  */
 $app->get('/user', function() use ($app, $client, $service) {
-
   checkUserAuthentication($app);
   $userinfoService = new Google_OAuth2Service($client);
-
   try {
     $user = $userinfoService->userinfo->get();
     renderJson($app, $user);
   } catch (Exception $ex) {
     renderEx($app, $ex);
   }
-
 });
 
 /**
@@ -161,23 +149,19 @@ $app->get('/user', function() use ($app, $client, $service) {
  * Requires login.
  */
 $app->get('/about', function() use ($app, $client, $service) {
-
   checkUserAuthentication($app);
-
   try {
     $about = $service->about->get();
     renderJson($app, $about);
   } catch (Exception $ex) {
     renderEx($app, $ex);
   }
-
 });
 
 /**
  * The start page, also handles the OAuth2 callback.
  */
 $app->get('/', function() use ($app, $client, $user) {
-
   // handle OAuth2 callback if code is set.
   if ($code = $app->request()->get('code')) {
     // handle code, retrieve credentials.
@@ -186,7 +170,6 @@ $app->get('/', function() use ($app, $client, $user) {
     set_user($tokens);
     $app->redirect('/');
   }
-
   if ($user) { // if there is a user in the session
     $app->render('index.html');
   } else {
