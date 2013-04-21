@@ -1,5 +1,8 @@
 # DrEdit for Java
 
+A walkthrough and more details are available on
+[Google Drive SDK docs](https://developers.google.com/drive/examples/java).
+
 ## Setup Instructions
 
 1. [Create a new Google App Engine application](https://appengine.google.com/)
@@ -21,7 +24,7 @@
     1. Set the default MIME types `text/plain` and `text/html`, and the default extensions `txt` and `html`.
     1. Ensure that the set of redirect URIs includes the URI of the Google App Engine application created in step 1 (i.e. `https://your_app_id.appspot.com`). The same URL must be provided for the `Open URL` and `Create URL` fields.
     1. Add the `Google API Scopes` of `https://www.googleapis.com/auth/userinfo.email`, `https://www.googleapis.com/auth/userinfo.profile` and `https://www.googleapis.com/auth/drive.install`.
-    1. For icons, use the example icons  provided in the `chromewebstore` directory checked out from the `google-drive-sdk-samples` project in step 2.
+    1. For icons, use the example icons  provided in the `chromewebstore` directory.
 1. [Download and install the Google Plugin for Eclipse](https://developers.google.com//appengine/docs/java/tools/eclipse)
 1. In Eclipse, [create a new Google App Engine project](https://developers.google.com//appengine/docs/java/tools/eclipse#Creating_a_Project), unchecking **Use Google Web Toolkit** and **Generate project sample code**.
 1. Copy the contents of the `java/` directory to the root of the Google App Engine project.
@@ -30,5 +33,5 @@
 1. Edit `war/WEB-INF/appengine-web.xml` and replace the value for the `application` setting with the identifier of the new Google App Engine application created in step 1.
 1. Edit `Scripts\app.js` and replace `YOUR_APP_ID` with the value of the `CLIENT_ID` from the [Google APIs Console](https://code.google.com/apis/console/) under the **API Access** tab for the project.
 1. Click the **App Engine deploy** button in Eclipse, following the instructions described in the [Google App Engine documentation](/appengine/docs/java/tools/eclipse#Uploading_to_Google_App_Engine) to upload the application to Google App Engine.
-1. Test the application works by browsing to `https://your_app_id.appspot.com/`.
+1. Test the application.
 1. Continue reading to find out how DrEdit is constructed, and how to modify it to work for your own application's needs.
