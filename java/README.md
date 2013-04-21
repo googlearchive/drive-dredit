@@ -1,4 +1,6 @@
-# Setup Instructions
+# DrEdit for Java
+
+## Setup Instructions
 
 1. [Create a new Google App Engine application](https://appengine.google.com/)
 1.  Clone DrEdit's git repo and init submodules:
