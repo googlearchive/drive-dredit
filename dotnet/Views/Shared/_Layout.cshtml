@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/css/bootstrap.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/font-awesome.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/bootstrap-responsive.css")" rel="stylesheet" type="text/css" />
+	<link href="@Url.Content("~/Content/css/app.css")" rel="stylesheet" type="text/css" />
+	<script src="https://www.google.com/jsapi" charset="utf-8"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+	
+    <script src="@Url.Content("~/Scripts/jquery/jquery-1.7.2.min.js")"></script>
+	<script src="@Url.Content("~/Scripts/ace/ace.js")"></script>
+	<script src="@Url.Content("~/Scripts/bootstrap/bootstrap.js")"></script>
+	<script src="@Url.Content("~/Scripts/angular-1.0.0/angular-1.0.0.js")"></script>
+	<script src="@Url.Content("~/Scripts/app.js")"></script>
+	<script src="@Url.Content("~/Scripts/services.js")"></script>
+	<script src="@Url.Content("~/Scripts/controllers.js")"></script>
+	<script src="@Url.Content("~/Scripts/filters.js")"></script>
+	<script src="@Url.Content("~/Scripts/directives.js")"></script>
+</head>
+
+<body ng-cloak ng-app="app">
+    @RenderBody()
+</body>
+</html>

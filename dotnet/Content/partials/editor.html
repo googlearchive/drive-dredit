@@ -1,0 +1,62 @@
+<div class="container-fluid">
+  <div id="doc-bar" class="row-fluid">
+    <span class="span4">
+        <h3 ng-show="doc.info.editable" class="doc-title"
+            data-toggle="modal" href="#rename-dialog">{{doc.info.title}}</h3>
+        <h3 ng-hide="doc.info.editable" class="doc-title">{{doc.info.title}}</h3>
+        <star value="doc.info.labels.starred" click="editor.dirty(true)"></star></span>
+    <span class="span4">{{editor.state() | saveStateFormatter }}</span>
+    <span class="span4" ng-controller="ShareCtrl"><a class="btn pull-right" href click="share"> Share</a></span>
+  </div>
+  <div class="navbar subnav">
+    <ul ng-controller="MenuCtrl" class="nav">
+      <li class="dropdown">
+        <a href class="dropdown-toggle" data-toggle="dropdown">
+          File <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a target="_blank" href="#/edit">New</a></li>
+          <li><a ng-click="open()" href>Open</a></li>
+          <li>
+              <a ng-show="doc.info.editable" data-toggle="modal" href="#rename-dialog">Rename</a>
+              <span ng-hide="doc.info.editable">Rename</span>
+          </li>
+          <li><a ng-click="save()" href>Save</a></li>
+        </ul>
+      </li>
+      <li><a href="#about-dialog" data-toggle="modal">About</a></li>
+    </ul>
+  </div>
+  
+</div>      
+
+<div class="modal hide" id="rename-dialog" ng-controller="RenameCtrl">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    <h3>Rename File</h3>
+  </div>
+  <div class="modal-body">
+    <form>
+        <label>Enter a new file name:</label>
+        <input type="text" ng-model="newFileName" autofocus required/>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <a href class="btn" data-dismiss="modal">Cancel</a>
+    <a href ng-click="save()" class="btn btn-primary">Save</a>
+  </div>
+</div>
+
+<div class="modal hide" id="about-dialog" ng-controller="AboutCtrl">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    <h3>About</h3>
+  </div>
+  <div class="modal-body">
+      <div><b>Total Drive Quota:</b> {{info.quotaBytesTotal | bytes}}</div>
+      <div><b>Drive Quota Used:</b> {{info.quotaBytesUsed | bytes}}</div>
+  </div>
+  <div class="modal-footer">
+    <a href class="btn btn-primary" data-dismiss="modal">Close</a>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+	<div class="container">
+	  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </a>
+	  <a class="brand" href="#">DrEdit</a>
+	  <ul class="nav pull-right" ng-controller="UserCtrl">
+		<li class="dropdown">
+		  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+			  {{user.email}}
+			  <!--<img class="profile-picture" src="{{user.picture}}"/>-->
+		  </a>
+		  <ul class="dropdown-menu">
+			<li><a href="{{user.link}}" target="_blank">Profile</a></li>
+		  </ul>
+		</li>
+	  </ul>          
+	</div>
+  </div>
+</div>
+<div ng-view></div>
+
+<div id="editor" ace-editor></div>
+
+<alert id="error"></alert>

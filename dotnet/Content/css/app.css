@@ -1,0 +1,66 @@
+/* app css stylesheet */
+
+#editor {
+  position: absolute;
+  top: 120px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+#doc-bar {
+  line-height: 27px;
+}
+
+.doc-title {
+	display:inline;
+	padding-right: 12px;
+}
+
+.star {
+	font-size: 22px;
+	color: black;
+}
+
+.icon-star {
+	color: yellow;
+	-webkit-text-stroke: 1px black;
+}
+
+.profile-picture {
+	width: 22px;
+}
+
+#error {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+body {
+	height: 100%;
+}
+
+.subnav {
+	margin-bottom: 0px;
+}
+
+.subnav .nav > li > a {
+	color: #333;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.subnav .nav > li > a:hover {
+	background-color: #F5F5F5;
+	color: #333;
+}
+.dropdown-menu span {
+  display: block;
+  padding: 3px 15px;
+  clear: both;
+  font-weight: normal;
+  line-height: 18px;
+  color: #333333;
+  white-space: nowrap;
+}
