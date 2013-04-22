@@ -29,9 +29,10 @@ A walkthrough and more details are available on
 1. In Eclipse, [create a new Google App Engine project](https://developers.google.com//appengine/docs/java/tools/eclipse#Creating_a_Project), unchecking **Use Google Web Toolkit** and **Generate project sample code**.
 1. Copy the contents of the `java/` directory to the root of the Google App Engine project.
 1. Using the Google Plugin for Eclipse, [add the **Drive API v2** and the **OAuth API v2** to the project](https://developers.google.com//appengine/docs/java/tools/eclipse).
-1. Copy `war/WEB-INF/client_secrets.json.example` to `war/WEB-INF/client_secrets.json`, and edit it to replace the `client_id`, `client_secret`, and `redirect_uris` with the values from the [Google APIs Console](https://code.google.com/apis/console/) under the **API Access** tab for the project.
+1. Edit `war/WEB-INF/client_secrets.json` to replace the `client_id`, `client_secret`, and `redirect_uris` with the values from the [Google APIs Console](https://code.google.com/apis/console/) under the **API Access** tab for the project.
 1. Edit `war/WEB-INF/appengine-web.xml` and replace the value for the `application` setting with the identifier of the new Google App Engine application created in step 1.
 1. Edit `Scripts\app.js` and replace `YOUR_APP_ID` with the value of the `CLIENT_ID` from the [Google APIs Console](https://code.google.com/apis/console/) under the **API Access** tab for the project.
 1. Click the **App Engine deploy** button in Eclipse, following the instructions described in the [Google App Engine documentation](/appengine/docs/java/tools/eclipse#Uploading_to_Google_App_Engine) to upload the application to Google App Engine.
 1. Test the application.
 1. Continue reading to find out how DrEdit is constructed, and how to modify it to work for your own application's needs.
+
