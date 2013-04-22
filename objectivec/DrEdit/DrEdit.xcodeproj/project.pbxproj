@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F7CDD7F15FA5C7E0057FC5E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7CDD7E15FA5C7E0057FC5E /* UIKit.framework */; };
+		9F7CDD8115FA5C7E0057FC5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7CDD8015FA5C7E0057FC5E /* Foundation.framework */; };
+		9F7CDD8315FA5C7E0057FC5E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7CDD8215FA5C7E0057FC5E /* CoreGraphics.framework */; };
+		9F7CDD8915FA5C7E0057FC5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F7CDD8715FA5C7E0057FC5E /* InfoPlist.strings */; };
+		9F7CDD8B15FA5C7E0057FC5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDD8A15FA5C7E0057FC5E /* main.m */; };
+		9F7CDD8F15FA5C7E0057FC5E /* DrEditAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDD8E15FA5C7E0057FC5E /* DrEditAppDelegate.m */; };
+		9F7CDD9215FA5C7E0057FC5E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F7CDD9015FA5C7E0057FC5E /* MainStoryboard.storyboard */; };
+		9F7CDD9515FA5C7E0057FC5E /* DrEditFilesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDD9415FA5C7E0057FC5E /* DrEditFilesListViewController.m */; };
+		9F7CDD9815FA5C7E0057FC5E /* DrEditFileEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDD9715FA5C7E0057FC5E /* DrEditFileEditViewController.m */; };
+		9F7CDDE115FA687D0057FC5E /* GTLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDA515FA687D0057FC5E /* GTLObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDE215FA687D0057FC5E /* GTLQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDA715FA687D0057FC5E /* GTLQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDE315FA687D0057FC5E /* GTLBatchQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDA915FA687D0057FC5E /* GTLBatchQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDE415FA687D0057FC5E /* GTLService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDAB15FA687D0057FC5E /* GTLService.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDE515FA687D0057FC5E /* GTLBatchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDAD15FA687D0057FC5E /* GTLBatchResult.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDE615FA687D0057FC5E /* GTLUploadParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDAF15FA687D0057FC5E /* GTLUploadParameters.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDE715FA687D0057FC5E /* GTLDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDB115FA687D0057FC5E /* GTLDateTime.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDE815FA687D0057FC5E /* GTLErrorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDB315FA687D0057FC5E /* GTLErrorObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDE915FA687D0057FC5E /* GTLRuntimeCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDB515FA687D0057FC5E /* GTLRuntimeCommon.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDEA15FA687D0057FC5E /* GTLFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDB715FA687D0057FC5E /* GTLFramework.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDEB15FA687D0057FC5E /* GTLJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDB915FA687D0057FC5E /* GTLJSONParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDEC15FA687D0057FC5E /* GTLUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDBC15FA687D0057FC5E /* GTLUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDED15FA687D0057FC5E /* GTLBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDBE15FA687D0057FC5E /* GTLBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDEE15FA687D0057FC5E /* GTMHTTPFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDC015FA687D0057FC5E /* GTMHTTPFetcherService.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDEF15FA687D0057FC5E /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDC215FA687D0057FC5E /* GTMHTTPFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDF015FA687D0057FC5E /* GTMHTTPFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDC415FA687D0057FC5E /* GTMHTTPFetcherLogging.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDF115FA687D0057FC5E /* GTMHTTPFetchHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDC615FA687D0057FC5E /* GTMHTTPFetchHistory.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDF215FA687D0057FC5E /* GTMHTTPUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDC815FA687D0057FC5E /* GTMHTTPUploadFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDF315FA687D0057FC5E /* GTMGatherInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDCA15FA687D0057FC5E /* GTMGatherInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDF415FA687D0057FC5E /* GTMMIMEDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDCC15FA687D0057FC5E /* GTMMIMEDocument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDF515FA687D0057FC5E /* GTMReadMonitorInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDCE15FA687D0057FC5E /* GTMReadMonitorInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDF615FA687D0057FC5E /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDD215FA687D0057FC5E /* SBJsonBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDF715FA687D0057FC5E /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDD415FA687D0057FC5E /* SBJsonParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDF815FA687D0057FC5E /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDD615FA687D0057FC5E /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDF915FA687D0057FC5E /* GTMOAuth2Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDD815FA687D0057FC5E /* GTMOAuth2Authentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDFA15FA687D0057FC5E /* GTMOAuth2SignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDDA15FA687D0057FC5E /* GTMOAuth2SignIn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDFB15FA687D0057FC5E /* GTMOAuth2Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F7CDDDB15FA687D0057FC5E /* GTMOAuth2Window.xib */; };
+		9F7CDDFC15FA687D0057FC5E /* GTMOAuth2WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDDD15FA687D0057FC5E /* GTMOAuth2WindowController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDFD15FA687D0057FC5E /* GTMOAuth2ViewControllerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDDF15FA687D0057FC5E /* GTMOAuth2ViewControllerTouch.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDFE15FA687D0057FC5E /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F7CDDE015FA687D0057FC5E /* GTMOAuth2ViewTouch.xib */; };
+		9F7CDE4A15FA69CB0057FC5E /* GTLDriveAbout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDE2715FA69CB0057FC5E /* GTLDriveAbout.m */; };
+		9F7CDE4B15FA69CB0057FC5E /* GTLDriveApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDE2915FA69CB0057FC5E /* GTLDriveApp.m */; };
+		9F7CDE4C15FA69CB0057FC5E /* GTLDriveAppList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDE2B15FA69CB0057FC5E /* GTLDriveAppList.m */; };
+		9F7CDE4D15FA69CB0057FC5E /* GTLDriveChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDE2D15FA69CB0057FC5E /* GTLDriveChange.m */; };
+		9F7CDE4E15FA69CB0057FC5E /* GTLDriveChangeList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDE2F15FA69CB0057FC5E /* GTLDriveChangeList.m */; };
+		9F7CDE4F15FA69CB0057FC5E /* GTLDriveChildList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDE3115FA69CB0057FC5E /* GTLDriveChildList.m */; };
+		9F7CDE5015FA69CB0057FC5E /* GTLDriveChildReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDE3315FA69CB0057FC5E /* GTLDriveChildReference.m */; };
+		9F7CDE5115FA69CB0057FC5E /* GTLDriveConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDE3515FA69CB0057FC5E /* GTLDriveConstants.m */; };
+		9F7CDE5215FA69CB0057FC5E /* GTLDriveFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDE3715FA69CB0057FC5E /* GTLDriveFile.m */; };
+		9F7CDE5315FA69CB0057FC5E /* GTLDriveFileList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDE3915FA69CB0057FC5E /* GTLDriveFileList.m */; };
+		9F7CDE5415FA69CB0057FC5E /* GTLDriveParentList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDE3B15FA69CB0057FC5E /* GTLDriveParentList.m */; };
+		9F7CDE5515FA69CB0057FC5E /* GTLDriveParentReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDE3D15FA69CB0057FC5E /* GTLDriveParentReference.m */; };
+		9F7CDE5615FA69CB0057FC5E /* GTLDrivePermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDE3F15FA69CB0057FC5E /* GTLDrivePermission.m */; };
+		9F7CDE5715FA69CB0057FC5E /* GTLDrivePermissionList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDE4115FA69CB0057FC5E /* GTLDrivePermissionList.m */; };
+		9F7CDE5815FA69CB0057FC5E /* GTLDriveRevision.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDE4315FA69CB0057FC5E /* GTLDriveRevision.m */; };
+		9F7CDE5915FA69CB0057FC5E /* GTLDriveRevisionList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDE4515FA69CB0057FC5E /* GTLDriveRevisionList.m */; };
+		9F7CDE5A15FA69CB0057FC5E /* GTLQueryDrive.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDE4715FA69CB0057FC5E /* GTLQueryDrive.m */; };
+		9F7CDE5B15FA69CB0057FC5E /* GTLServiceDrive.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDE4915FA69CB0057FC5E /* GTLServiceDrive.m */; };
+		9F7CDE5D15FA6A010057FC5E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7CDE5C15FA6A010057FC5E /* Security.framework */; };
+		9F7CDE5F15FA6A110057FC5E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7CDE5E15FA6A110057FC5E /* SystemConfiguration.framework */; };
+		9F7CDE6215FA6EF80057FC5E /* DrEditUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDE6115FA6EF80057FC5E /* DrEditUtilities.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9F7CDD7A15FA5C7E0057FC5E /* DrEdit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrEdit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F7CDD7E15FA5C7E0057FC5E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9F7CDD8015FA5C7E0057FC5E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9F7CDD8215FA5C7E0057FC5E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9F7CDD8615FA5C7E0057FC5E /* DrEdit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DrEdit-Info.plist"; sourceTree = "<group>"; };
+		9F7CDD8815FA5C7E0057FC5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9F7CDD8A15FA5C7E0057FC5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9F7CDD8C15FA5C7E0057FC5E /* DrEdit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DrEdit-Prefix.pch"; sourceTree = "<group>"; };
+		9F7CDD8D15FA5C7E0057FC5E /* DrEditAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrEditAppDelegate.h; sourceTree = "<group>"; };
+		9F7CDD8E15FA5C7E0057FC5E /* DrEditAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrEditAppDelegate.m; sourceTree = "<group>"; };
+		9F7CDD9115FA5C7E0057FC5E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		9F7CDD9315FA5C7E0057FC5E /* DrEditFilesListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrEditFilesListViewController.h; sourceTree = "<group>"; };
+		9F7CDD9415FA5C7E0057FC5E /* DrEditFilesListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrEditFilesListViewController.m; sourceTree = "<group>"; };
+		9F7CDD9615FA5C7E0057FC5E /* DrEditFileEditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrEditFileEditViewController.h; sourceTree = "<group>"; };
+		9F7CDD9715FA5C7E0057FC5E /* DrEditFileEditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrEditFileEditViewController.m; sourceTree = "<group>"; };
+		9F7CDDA315FA687D0057FC5E /* GTLDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDefines.h; path = "../../google-api-objectivec-client/Source/GTLDefines.h"; sourceTree = "<group>"; };
+		9F7CDDA415FA687D0057FC5E /* GTLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLObject.h; path = "../../google-api-objectivec-client/Source/Objects/GTLObject.h"; sourceTree = "<group>"; };
+		9F7CDDA515FA687D0057FC5E /* GTLObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLObject.m; path = "../../google-api-objectivec-client/Source/Objects/GTLObject.m"; sourceTree = "<group>"; };
+		9F7CDDA615FA687D0057FC5E /* GTLQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLQuery.h; path = "../../google-api-objectivec-client/Source/Objects/GTLQuery.h"; sourceTree = "<group>"; };
+		9F7CDDA715FA687D0057FC5E /* GTLQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLQuery.m; path = "../../google-api-objectivec-client/Source/Objects/GTLQuery.m"; sourceTree = "<group>"; };
+		9F7CDDA815FA687D0057FC5E /* GTLBatchQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLBatchQuery.h; path = "../../google-api-objectivec-client/Source/Objects/GTLBatchQuery.h"; sourceTree = "<group>"; };
+		9F7CDDA915FA687D0057FC5E /* GTLBatchQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLBatchQuery.m; path = "../../google-api-objectivec-client/Source/Objects/GTLBatchQuery.m"; sourceTree = "<group>"; };
+		9F7CDDAA15FA687D0057FC5E /* GTLService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLService.h; path = "../../google-api-objectivec-client/Source/Objects/GTLService.h"; sourceTree = "<group>"; };
+		9F7CDDAB15FA687D0057FC5E /* GTLService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLService.m; path = "../../google-api-objectivec-client/Source/Objects/GTLService.m"; sourceTree = "<group>"; };
+		9F7CDDAC15FA687D0057FC5E /* GTLBatchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLBatchResult.h; path = "../../google-api-objectivec-client/Source/Objects/GTLBatchResult.h"; sourceTree = "<group>"; };
+		9F7CDDAD15FA687D0057FC5E /* GTLBatchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLBatchResult.m; path = "../../google-api-objectivec-client/Source/Objects/GTLBatchResult.m"; sourceTree = "<group>"; };
+		9F7CDDAE15FA687D0057FC5E /* GTLUploadParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLUploadParameters.h; path = "../../google-api-objectivec-client/Source/Objects/GTLUploadParameters.h"; sourceTree = "<group>"; };
+		9F7CDDAF15FA687D0057FC5E /* GTLUploadParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLUploadParameters.m; path = "../../google-api-objectivec-client/Source/Objects/GTLUploadParameters.m"; sourceTree = "<group>"; };
+		9F7CDDB015FA687D0057FC5E /* GTLDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDateTime.h; path = "../../google-api-objectivec-client/Source/Objects/GTLDateTime.h"; sourceTree = "<group>"; };
+		9F7CDDB115FA687D0057FC5E /* GTLDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLDateTime.m; path = "../../google-api-objectivec-client/Source/Objects/GTLDateTime.m"; sourceTree = "<group>"; };
+		9F7CDDB215FA687D0057FC5E /* GTLErrorObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLErrorObject.h; path = "../../google-api-objectivec-client/Source/Objects/GTLErrorObject.h"; sourceTree = "<group>"; };
+		9F7CDDB315FA687D0057FC5E /* GTLErrorObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLErrorObject.m; path = "../../google-api-objectivec-client/Source/Objects/GTLErrorObject.m"; sourceTree = "<group>"; };
+		9F7CDDB415FA687D0057FC5E /* GTLRuntimeCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLRuntimeCommon.h; path = "../../google-api-objectivec-client/Source/Objects/GTLRuntimeCommon.h"; sourceTree = "<group>"; };
+		9F7CDDB515FA687D0057FC5E /* GTLRuntimeCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLRuntimeCommon.m; path = "../../google-api-objectivec-client/Source/Objects/GTLRuntimeCommon.m"; sourceTree = "<group>"; };
+		9F7CDDB615FA687D0057FC5E /* GTLFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLFramework.h; path = "../../google-api-objectivec-client/Source/Utilities/GTLFramework.h"; sourceTree = "<group>"; };
+		9F7CDDB715FA687D0057FC5E /* GTLFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLFramework.m; path = "../../google-api-objectivec-client/Source/Utilities/GTLFramework.m"; sourceTree = "<group>"; };
+		9F7CDDB815FA687D0057FC5E /* GTLJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLJSONParser.h; path = "../../google-api-objectivec-client/Source/Utilities/GTLJSONParser.h"; sourceTree = "<group>"; };
+		9F7CDDB915FA687D0057FC5E /* GTLJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLJSONParser.m; path = "../../google-api-objectivec-client/Source/Utilities/GTLJSONParser.m"; sourceTree = "<group>"; };
+		9F7CDDBA15FA687D0057FC5E /* GTLTargetNamespace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLTargetNamespace.h; path = "../../google-api-objectivec-client/Source/Utilities/GTLTargetNamespace.h"; sourceTree = "<group>"; };
+		9F7CDDBB15FA687D0057FC5E /* GTLUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLUtilities.h; path = "../../google-api-objectivec-client/Source/Utilities/GTLUtilities.h"; sourceTree = "<group>"; };
+		9F7CDDBC15FA687D0057FC5E /* GTLUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLUtilities.m; path = "../../google-api-objectivec-client/Source/Utilities/GTLUtilities.m"; sourceTree = "<group>"; };
+		9F7CDDBD15FA687D0057FC5E /* GTLBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLBase64.h; path = "../../google-api-objectivec-client/Source/Utilities/GTLBase64.h"; sourceTree = "<group>"; };
+		9F7CDDBE15FA687D0057FC5E /* GTLBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLBase64.m; path = "../../google-api-objectivec-client/Source/Utilities/GTLBase64.m"; sourceTree = "<group>"; };
+		9F7CDDBF15FA687D0057FC5E /* GTMHTTPFetcherService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPFetcherService.h; path = "../../google-api-objectivec-client/Source/HTTPFetcher/GTMHTTPFetcherService.h"; sourceTree = "<group>"; };
+		9F7CDDC015FA687D0057FC5E /* GTMHTTPFetcherService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPFetcherService.m; path = "../../google-api-objectivec-client/Source/HTTPFetcher/GTMHTTPFetcherService.m"; sourceTree = "<group>"; };
+		9F7CDDC115FA687D0057FC5E /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPFetcher.h; path = "../../google-api-objectivec-client/Source/HTTPFetcher/GTMHTTPFetcher.h"; sourceTree = "<group>"; };
+		9F7CDDC215FA687D0057FC5E /* GTMHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPFetcher.m; path = "../../google-api-objectivec-client/Source/HTTPFetcher/GTMHTTPFetcher.m"; sourceTree = "<group>"; };
+		9F7CDDC315FA687D0057FC5E /* GTMHTTPFetcherLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPFetcherLogging.h; path = "../../google-api-objectivec-client/Source/HTTPFetcher/GTMHTTPFetcherLogging.h"; sourceTree = "<group>"; };
+		9F7CDDC415FA687D0057FC5E /* GTMHTTPFetcherLogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPFetcherLogging.m; path = "../../google-api-objectivec-client/Source/HTTPFetcher/GTMHTTPFetcherLogging.m"; sourceTree = "<group>"; };
+		9F7CDDC515FA687D0057FC5E /* GTMHTTPFetchHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPFetchHistory.h; path = "../../google-api-objectivec-client/Source/HTTPFetcher/GTMHTTPFetchHistory.h"; sourceTree = "<group>"; };
+		9F7CDDC615FA687D0057FC5E /* GTMHTTPFetchHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPFetchHistory.m; path = "../../google-api-objectivec-client/Source/HTTPFetcher/GTMHTTPFetchHistory.m"; sourceTree = "<group>"; };
+		9F7CDDC715FA687D0057FC5E /* GTMHTTPUploadFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPUploadFetcher.h; path = "../../google-api-objectivec-client/Source/HTTPFetcher/GTMHTTPUploadFetcher.h"; sourceTree = "<group>"; };
+		9F7CDDC815FA687D0057FC5E /* GTMHTTPUploadFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPUploadFetcher.m; path = "../../google-api-objectivec-client/Source/HTTPFetcher/GTMHTTPUploadFetcher.m"; sourceTree = "<group>"; };
+		9F7CDDC915FA687D0057FC5E /* GTMGatherInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMGatherInputStream.h; path = "../../google-api-objectivec-client/Source/HTTPFetcher/GTMGatherInputStream.h"; sourceTree = "<group>"; };
+		9F7CDDCA15FA687D0057FC5E /* GTMGatherInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMGatherInputStream.m; path = "../../google-api-objectivec-client/Source/HTTPFetcher/GTMGatherInputStream.m"; sourceTree = "<group>"; };
+		9F7CDDCB15FA687D0057FC5E /* GTMMIMEDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMMIMEDocument.h; path = "../../google-api-objectivec-client/Source/HTTPFetcher/GTMMIMEDocument.h"; sourceTree = "<group>"; };
+		9F7CDDCC15FA687D0057FC5E /* GTMMIMEDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMMIMEDocument.m; path = "../../google-api-objectivec-client/Source/HTTPFetcher/GTMMIMEDocument.m"; sourceTree = "<group>"; };
+		9F7CDDCD15FA687D0057FC5E /* GTMReadMonitorInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMReadMonitorInputStream.h; path = "../../google-api-objectivec-client/Source/HTTPFetcher/GTMReadMonitorInputStream.h"; sourceTree = "<group>"; };
+		9F7CDDCE15FA687D0057FC5E /* GTMReadMonitorInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMReadMonitorInputStream.m; path = "../../google-api-objectivec-client/Source/HTTPFetcher/GTMReadMonitorInputStream.m"; sourceTree = "<group>"; };
+		9F7CDDCF15FA687D0057FC5E /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSON.h; path = "../../google-api-objectivec-client/Source/JSON/JSON.h"; sourceTree = "<group>"; };
+		9F7CDDD015FA687D0057FC5E /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSON.h; path = "../../google-api-objectivec-client/Source/JSON/JSON.h"; sourceTree = "<group>"; };
+		9F7CDDD115FA687D0057FC5E /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonBase.h; path = "../../google-api-objectivec-client/Source/JSON/SBJsonBase.h"; sourceTree = "<group>"; };
+		9F7CDDD215FA687D0057FC5E /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonBase.m; path = "../../google-api-objectivec-client/Source/JSON/SBJsonBase.m"; sourceTree = "<group>"; };
+		9F7CDDD315FA687D0057FC5E /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = "../../google-api-objectivec-client/Source/JSON/SBJsonParser.h"; sourceTree = "<group>"; };
+		9F7CDDD415FA687D0057FC5E /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = "../../google-api-objectivec-client/Source/JSON/SBJsonParser.m"; sourceTree = "<group>"; };
+		9F7CDDD515FA687D0057FC5E /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = "../../google-api-objectivec-client/Source/JSON/SBJsonWriter.h"; sourceTree = "<group>"; };
+		9F7CDDD615FA687D0057FC5E /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = "../../google-api-objectivec-client/Source/JSON/SBJsonWriter.m"; sourceTree = "<group>"; };
+		9F7CDDD715FA687D0057FC5E /* GTMOAuth2Authentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMOAuth2Authentication.h; path = "../../google-api-objectivec-client/Source/OAuth2/GTMOAuth2Authentication.h"; sourceTree = "<group>"; };
+		9F7CDDD815FA687D0057FC5E /* GTMOAuth2Authentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMOAuth2Authentication.m; path = "../../google-api-objectivec-client/Source/OAuth2/GTMOAuth2Authentication.m"; sourceTree = "<group>"; };
+		9F7CDDD915FA687D0057FC5E /* GTMOAuth2SignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMOAuth2SignIn.h; path = "../../google-api-objectivec-client/Source/OAuth2/GTMOAuth2SignIn.h"; sourceTree = "<group>"; };
+		9F7CDDDA15FA687D0057FC5E /* GTMOAuth2SignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMOAuth2SignIn.m; path = "../../google-api-objectivec-client/Source/OAuth2/GTMOAuth2SignIn.m"; sourceTree = "<group>"; };
+		9F7CDDDB15FA687D0057FC5E /* GTMOAuth2Window.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuth2Window.xib; path = "../../google-api-objectivec-client/Source/OAuth2/Mac/GTMOAuth2Window.xib"; sourceTree = "<group>"; };
+		9F7CDDDC15FA687D0057FC5E /* GTMOAuth2WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMOAuth2WindowController.h; path = "../../google-api-objectivec-client/Source/OAuth2/Mac/GTMOAuth2WindowController.h"; sourceTree = "<group>"; };
+		9F7CDDDD15FA687D0057FC5E /* GTMOAuth2WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMOAuth2WindowController.m; path = "../../google-api-objectivec-client/Source/OAuth2/Mac/GTMOAuth2WindowController.m"; sourceTree = "<group>"; };
+		9F7CDDDE15FA687D0057FC5E /* GTMOAuth2ViewControllerTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMOAuth2ViewControllerTouch.h; path = "../../google-api-objectivec-client/Source/OAuth2/Touch/GTMOAuth2ViewControllerTouch.h"; sourceTree = "<group>"; };
+		9F7CDDDF15FA687D0057FC5E /* GTMOAuth2ViewControllerTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMOAuth2ViewControllerTouch.m; path = "../../google-api-objectivec-client/Source/OAuth2/Touch/GTMOAuth2ViewControllerTouch.m"; sourceTree = "<group>"; };
+		9F7CDDE015FA687D0057FC5E /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = "../../google-api-objectivec-client/Source/OAuth2/Touch/GTMOAuth2ViewTouch.xib"; sourceTree = "<group>"; };
+		9F7CDE2515FA69CB0057FC5E /* GTLDrive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDrive.h; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDrive.h"; sourceTree = "<group>"; };
+		9F7CDE2615FA69CB0057FC5E /* GTLDriveAbout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDriveAbout.h; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveAbout.h"; sourceTree = "<group>"; };
+		9F7CDE2715FA69CB0057FC5E /* GTLDriveAbout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLDriveAbout.m; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveAbout.m"; sourceTree = "<group>"; };
+		9F7CDE2815FA69CB0057FC5E /* GTLDriveApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDriveApp.h; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveApp.h"; sourceTree = "<group>"; };
+		9F7CDE2915FA69CB0057FC5E /* GTLDriveApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLDriveApp.m; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveApp.m"; sourceTree = "<group>"; };
+		9F7CDE2A15FA69CB0057FC5E /* GTLDriveAppList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDriveAppList.h; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveAppList.h"; sourceTree = "<group>"; };
+		9F7CDE2B15FA69CB0057FC5E /* GTLDriveAppList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLDriveAppList.m; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveAppList.m"; sourceTree = "<group>"; };
+		9F7CDE2C15FA69CB0057FC5E /* GTLDriveChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDriveChange.h; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveChange.h"; sourceTree = "<group>"; };
+		9F7CDE2D15FA69CB0057FC5E /* GTLDriveChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLDriveChange.m; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveChange.m"; sourceTree = "<group>"; };
+		9F7CDE2E15FA69CB0057FC5E /* GTLDriveChangeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDriveChangeList.h; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveChangeList.h"; sourceTree = "<group>"; };
+		9F7CDE2F15FA69CB0057FC5E /* GTLDriveChangeList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLDriveChangeList.m; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveChangeList.m"; sourceTree = "<group>"; };
+		9F7CDE3015FA69CB0057FC5E /* GTLDriveChildList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDriveChildList.h; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveChildList.h"; sourceTree = "<group>"; };
+		9F7CDE3115FA69CB0057FC5E /* GTLDriveChildList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLDriveChildList.m; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveChildList.m"; sourceTree = "<group>"; };
+		9F7CDE3215FA69CB0057FC5E /* GTLDriveChildReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDriveChildReference.h; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveChildReference.h"; sourceTree = "<group>"; };
+		9F7CDE3315FA69CB0057FC5E /* GTLDriveChildReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLDriveChildReference.m; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveChildReference.m"; sourceTree = "<group>"; };
+		9F7CDE3415FA69CB0057FC5E /* GTLDriveConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDriveConstants.h; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveConstants.h"; sourceTree = "<group>"; };
+		9F7CDE3515FA69CB0057FC5E /* GTLDriveConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLDriveConstants.m; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveConstants.m"; sourceTree = "<group>"; };
+		9F7CDE3615FA69CB0057FC5E /* GTLDriveFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDriveFile.h; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveFile.h"; sourceTree = "<group>"; };
+		9F7CDE3715FA69CB0057FC5E /* GTLDriveFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLDriveFile.m; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveFile.m"; sourceTree = "<group>"; };
+		9F7CDE3815FA69CB0057FC5E /* GTLDriveFileList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDriveFileList.h; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveFileList.h"; sourceTree = "<group>"; };
+		9F7CDE3915FA69CB0057FC5E /* GTLDriveFileList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLDriveFileList.m; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveFileList.m"; sourceTree = "<group>"; };
+		9F7CDE3A15FA69CB0057FC5E /* GTLDriveParentList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDriveParentList.h; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveParentList.h"; sourceTree = "<group>"; };
+		9F7CDE3B15FA69CB0057FC5E /* GTLDriveParentList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLDriveParentList.m; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveParentList.m"; sourceTree = "<group>"; };
+		9F7CDE3C15FA69CB0057FC5E /* GTLDriveParentReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDriveParentReference.h; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveParentReference.h"; sourceTree = "<group>"; };
+		9F7CDE3D15FA69CB0057FC5E /* GTLDriveParentReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLDriveParentReference.m; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveParentReference.m"; sourceTree = "<group>"; };
+		9F7CDE3E15FA69CB0057FC5E /* GTLDrivePermission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDrivePermission.h; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDrivePermission.h"; sourceTree = "<group>"; };
+		9F7CDE3F15FA69CB0057FC5E /* GTLDrivePermission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLDrivePermission.m; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDrivePermission.m"; sourceTree = "<group>"; };
+		9F7CDE4015FA69CB0057FC5E /* GTLDrivePermissionList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDrivePermissionList.h; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDrivePermissionList.h"; sourceTree = "<group>"; };
+		9F7CDE4115FA69CB0057FC5E /* GTLDrivePermissionList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLDrivePermissionList.m; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDrivePermissionList.m"; sourceTree = "<group>"; };
+		9F7CDE4215FA69CB0057FC5E /* GTLDriveRevision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDriveRevision.h; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveRevision.h"; sourceTree = "<group>"; };
+		9F7CDE4315FA69CB0057FC5E /* GTLDriveRevision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLDriveRevision.m; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveRevision.m"; sourceTree = "<group>"; };
+		9F7CDE4415FA69CB0057FC5E /* GTLDriveRevisionList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDriveRevisionList.h; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveRevisionList.h"; sourceTree = "<group>"; };
+		9F7CDE4515FA69CB0057FC5E /* GTLDriveRevisionList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLDriveRevisionList.m; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLDriveRevisionList.m"; sourceTree = "<group>"; };
+		9F7CDE4615FA69CB0057FC5E /* GTLQueryDrive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLQueryDrive.h; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLQueryDrive.h"; sourceTree = "<group>"; };
+		9F7CDE4715FA69CB0057FC5E /* GTLQueryDrive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLQueryDrive.m; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLQueryDrive.m"; sourceTree = "<group>"; };
+		9F7CDE4815FA69CB0057FC5E /* GTLServiceDrive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLServiceDrive.h; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLServiceDrive.h"; sourceTree = "<group>"; };
+		9F7CDE4915FA69CB0057FC5E /* GTLServiceDrive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLServiceDrive.m; path = "../../google-api-objectivec-client/Source/Services/Drive/Generated/GTLServiceDrive.m"; sourceTree = "<group>"; };
+		9F7CDE5C15FA6A010057FC5E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9F7CDE5E15FA6A110057FC5E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9F7CDE6015FA6EF80057FC5E /* DrEditUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrEditUtilities.h; sourceTree = "<group>"; };
+		9F7CDE6115FA6EF80057FC5E /* DrEditUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrEditUtilities.m; sourceTree = "<group>"; };
+		9F7CDE6A15FA933E0057FC5E /* DrEditFileEditDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrEditFileEditDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F7CDD7715FA5C7E0057FC5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F7CDE5F15FA6A110057FC5E /* SystemConfiguration.framework in Frameworks */,
+				9F7CDE5D15FA6A010057FC5E /* Security.framework in Frameworks */,
+				9F7CDD7F15FA5C7E0057FC5E /* UIKit.framework in Frameworks */,
+				9F7CDD8115FA5C7E0057FC5E /* Foundation.framework in Frameworks */,
+				9F7CDD8315FA5C7E0057FC5E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F7CDD6F15FA5C7E0057FC5E = {
+			isa = PBXGroup;
+			children = (
+				9F7CDE5E15FA6A110057FC5E /* SystemConfiguration.framework */,
+				9F7CDE5C15FA6A010057FC5E /* Security.framework */,
+				9F7CDD8415FA5C7E0057FC5E /* DrEdit */,
+				9F7CDD7D15FA5C7E0057FC5E /* Frameworks */,
+				9F7CDD7B15FA5C7E0057FC5E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F7CDD7B15FA5C7E0057FC5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F7CDD7A15FA5C7E0057FC5E /* DrEdit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F7CDD7D15FA5C7E0057FC5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F7CDD7E15FA5C7E0057FC5E /* UIKit.framework */,
+				9F7CDD8015FA5C7E0057FC5E /* Foundation.framework */,
+				9F7CDD8215FA5C7E0057FC5E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F7CDD8415FA5C7E0057FC5E /* DrEdit */ = {
+			isa = PBXGroup;
+			children = (
+				9F7CDDFF15FA68890057FC5E /* Drive API */,
+				9F7CDD9E15FA64460057FC5E /* Client Library */,
+				9F7CDD8D15FA5C7E0057FC5E /* DrEditAppDelegate.h */,
+				9F7CDD8E15FA5C7E0057FC5E /* DrEditAppDelegate.m */,
+				9F7CDD9015FA5C7E0057FC5E /* MainStoryboard.storyboard */,
+				9F7CDD9315FA5C7E0057FC5E /* DrEditFilesListViewController.h */,
+				9F7CDD9415FA5C7E0057FC5E /* DrEditFilesListViewController.m */,
+				9F7CDD9615FA5C7E0057FC5E /* DrEditFileEditViewController.h */,
+				9F7CDD9715FA5C7E0057FC5E /* DrEditFileEditViewController.m */,
+				9F7CDE6015FA6EF80057FC5E /* DrEditUtilities.h */,
+				9F7CDE6115FA6EF80057FC5E /* DrEditUtilities.m */,
+				9F7CDE6A15FA933E0057FC5E /* DrEditFileEditDelegate.h */,
+				9F7CDD8515FA5C7E0057FC5E /* Supporting Files */,
+			);
+			path = DrEdit;
+			sourceTree = "<group>";
+		};
+		9F7CDD8515FA5C7E0057FC5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F7CDD8615FA5C7E0057FC5E /* DrEdit-Info.plist */,
+				9F7CDD8715FA5C7E0057FC5E /* InfoPlist.strings */,
+				9F7CDD8A15FA5C7E0057FC5E /* main.m */,
+				9F7CDD8C15FA5C7E0057FC5E /* DrEdit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9F7CDD9E15FA64460057FC5E /* Client Library */ = {
+			isa = PBXGroup;
+			children = (
+				9F7CDDA315FA687D0057FC5E /* GTLDefines.h */,
+				9F7CDDA415FA687D0057FC5E /* GTLObject.h */,
+				9F7CDDA515FA687D0057FC5E /* GTLObject.m */,
+				9F7CDDA615FA687D0057FC5E /* GTLQuery.h */,
+				9F7CDDA715FA687D0057FC5E /* GTLQuery.m */,
+				9F7CDDA815FA687D0057FC5E /* GTLBatchQuery.h */,
+				9F7CDDA915FA687D0057FC5E /* GTLBatchQuery.m */,
+				9F7CDDAA15FA687D0057FC5E /* GTLService.h */,
+				9F7CDDAB15FA687D0057FC5E /* GTLService.m */,
+				9F7CDDAC15FA687D0057FC5E /* GTLBatchResult.h */,
+				9F7CDDAD15FA687D0057FC5E /* GTLBatchResult.m */,
+				9F7CDDAE15FA687D0057FC5E /* GTLUploadParameters.h */,
+				9F7CDDAF15FA687D0057FC5E /* GTLUploadParameters.m */,
+				9F7CDDB015FA687D0057FC5E /* GTLDateTime.h */,
+				9F7CDDB115FA687D0057FC5E /* GTLDateTime.m */,
+				9F7CDDB215FA687D0057FC5E /* GTLErrorObject.h */,
+				9F7CDDB315FA687D0057FC5E /* GTLErrorObject.m */,
+				9F7CDDB415FA687D0057FC5E /* GTLRuntimeCommon.h */,
+				9F7CDDB515FA687D0057FC5E /* GTLRuntimeCommon.m */,
+				9F7CDDB615FA687D0057FC5E /* GTLFramework.h */,
+				9F7CDDB715FA687D0057FC5E /* GTLFramework.m */,
+				9F7CDDB815FA687D0057FC5E /* GTLJSONParser.h */,
+				9F7CDDB915FA687D0057FC5E /* GTLJSONParser.m */,
+				9F7CDDBA15FA687D0057FC5E /* GTLTargetNamespace.h */,
+				9F7CDDBB15FA687D0057FC5E /* GTLUtilities.h */,
+				9F7CDDBC15FA687D0057FC5E /* GTLUtilities.m */,
+				9F7CDDBD15FA687D0057FC5E /* GTLBase64.h */,
+				9F7CDDBE15FA687D0057FC5E /* GTLBase64.m */,
+				9F7CDDBF15FA687D0057FC5E /* GTMHTTPFetcherService.h */,
+				9F7CDDC015FA687D0057FC5E /* GTMHTTPFetcherService.m */,
+				9F7CDDC115FA687D0057FC5E /* GTMHTTPFetcher.h */,
+				9F7CDDC215FA687D0057FC5E /* GTMHTTPFetcher.m */,
+				9F7CDDC315FA687D0057FC5E /* GTMHTTPFetcherLogging.h */,
+				9F7CDDC415FA687D0057FC5E /* GTMHTTPFetcherLogging.m */,
+				9F7CDDC515FA687D0057FC5E /* GTMHTTPFetchHistory.h */,
+				9F7CDDC615FA687D0057FC5E /* GTMHTTPFetchHistory.m */,
+				9F7CDDC715FA687D0057FC5E /* GTMHTTPUploadFetcher.h */,
+				9F7CDDC815FA687D0057FC5E /* GTMHTTPUploadFetcher.m */,
+				9F7CDDC915FA687D0057FC5E /* GTMGatherInputStream.h */,
+				9F7CDDCA15FA687D0057FC5E /* GTMGatherInputStream.m */,
+				9F7CDDCB15FA687D0057FC5E /* GTMMIMEDocument.h */,
+				9F7CDDCC15FA687D0057FC5E /* GTMMIMEDocument.m */,
+				9F7CDDCD15FA687D0057FC5E /* GTMReadMonitorInputStream.h */,
+				9F7CDDCE15FA687D0057FC5E /* GTMReadMonitorInputStream.m */,
+				9F7CDDCF15FA687D0057FC5E /* JSON.h */,
+				9F7CDDD015FA687D0057FC5E /* JSON.h */,
+				9F7CDDD115FA687D0057FC5E /* SBJsonBase.h */,
+				9F7CDDD215FA687D0057FC5E /* SBJsonBase.m */,
+				9F7CDDD315FA687D0057FC5E /* SBJsonParser.h */,
+				9F7CDDD415FA687D0057FC5E /* SBJsonParser.m */,
+				9F7CDDD515FA687D0057FC5E /* SBJsonWriter.h */,
+				9F7CDDD615FA687D0057FC5E /* SBJsonWriter.m */,
+				9F7CDDD715FA687D0057FC5E /* GTMOAuth2Authentication.h */,
+				9F7CDDD815FA687D0057FC5E /* GTMOAuth2Authentication.m */,
+				9F7CDDD915FA687D0057FC5E /* GTMOAuth2SignIn.h */,
+				9F7CDDDA15FA687D0057FC5E /* GTMOAuth2SignIn.m */,
+				9F7CDDDB15FA687D0057FC5E /* GTMOAuth2Window.xib */,
+				9F7CDDDC15FA687D0057FC5E /* GTMOAuth2WindowController.h */,
+				9F7CDDDD15FA687D0057FC5E /* GTMOAuth2WindowController.m */,
+				9F7CDDDE15FA687D0057FC5E /* GTMOAuth2ViewControllerTouch.h */,
+				9F7CDDDF15FA687D0057FC5E /* GTMOAuth2ViewControllerTouch.m */,
+				9F7CDDE015FA687D0057FC5E /* GTMOAuth2ViewTouch.xib */,
+			);
+			name = "Client Library";
+			sourceTree = "<group>";
+		};
+		9F7CDDFF15FA68890057FC5E /* Drive API */ = {
+			isa = PBXGroup;
+			children = (
+				9F7CDE2515FA69CB0057FC5E /* GTLDrive.h */,
+				9F7CDE2615FA69CB0057FC5E /* GTLDriveAbout.h */,
+				9F7CDE2715FA69CB0057FC5E /* GTLDriveAbout.m */,
+				9F7CDE2815FA69CB0057FC5E /* GTLDriveApp.h */,
+				9F7CDE2915FA69CB0057FC5E /* GTLDriveApp.m */,
+				9F7CDE2A15FA69CB0057FC5E /* GTLDriveAppList.h */,
+				9F7CDE2B15FA69CB0057FC5E /* GTLDriveAppList.m */,
+				9F7CDE2C15FA69CB0057FC5E /* GTLDriveChange.h */,
+				9F7CDE2D15FA69CB0057FC5E /* GTLDriveChange.m */,
+				9F7CDE2E15FA69CB0057FC5E /* GTLDriveChangeList.h */,
+				9F7CDE2F15FA69CB0057FC5E /* GTLDriveChangeList.m */,
+				9F7CDE3015FA69CB0057FC5E /* GTLDriveChildList.h */,
+				9F7CDE3115FA69CB0057FC5E /* GTLDriveChildList.m */,
+				9F7CDE3215FA69CB0057FC5E /* GTLDriveChildReference.h */,
+				9F7CDE3315FA69CB0057FC5E /* GTLDriveChildReference.m */,
+				9F7CDE3415FA69CB0057FC5E /* GTLDriveConstants.h */,
+				9F7CDE3515FA69CB0057FC5E /* GTLDriveConstants.m */,
+				9F7CDE3615FA69CB0057FC5E /* GTLDriveFile.h */,
+				9F7CDE3715FA69CB0057FC5E /* GTLDriveFile.m */,
+				9F7CDE3815FA69CB0057FC5E /* GTLDriveFileList.h */,
+				9F7CDE3915FA69CB0057FC5E /* GTLDriveFileList.m */,
+				9F7CDE3A15FA69CB0057FC5E /* GTLDriveParentList.h */,
+				9F7CDE3B15FA69CB0057FC5E /* GTLDriveParentList.m */,
+				9F7CDE3C15FA69CB0057FC5E /* GTLDriveParentReference.h */,
+				9F7CDE3D15FA69CB0057FC5E /* GTLDriveParentReference.m */,
+				9F7CDE3E15FA69CB0057FC5E /* GTLDrivePermission.h */,
+				9F7CDE3F15FA69CB0057FC5E /* GTLDrivePermission.m */,
+				9F7CDE4015FA69CB0057FC5E /* GTLDrivePermissionList.h */,
+				9F7CDE4115FA69CB0057FC5E /* GTLDrivePermissionList.m */,
+				9F7CDE4215FA69CB0057FC5E /* GTLDriveRevision.h */,
+				9F7CDE4315FA69CB0057FC5E /* GTLDriveRevision.m */,
+				9F7CDE4415FA69CB0057FC5E /* GTLDriveRevisionList.h */,
+				9F7CDE4515FA69CB0057FC5E /* GTLDriveRevisionList.m */,
+				9F7CDE4615FA69CB0057FC5E /* GTLQueryDrive.h */,
+				9F7CDE4715FA69CB0057FC5E /* GTLQueryDrive.m */,
+				9F7CDE4815FA69CB0057FC5E /* GTLServiceDrive.h */,
+				9F7CDE4915FA69CB0057FC5E /* GTLServiceDrive.m */,
+			);
+			name = "Drive API";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F7CDD7915FA5C7E0057FC5E /* DrEdit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F7CDD9B15FA5C7E0057FC5E /* Build configuration list for PBXNativeTarget "DrEdit" */;
+			buildPhases = (
+				9F7CDD7615FA5C7E0057FC5E /* Sources */,
+				9F7CDD7715FA5C7E0057FC5E /* Frameworks */,
+				9F7CDD7815FA5C7E0057FC5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrEdit;
+			productName = DrEdit;
+			productReference = 9F7CDD7A15FA5C7E0057FC5E /* DrEdit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F7CDD7115FA5C7E0057FC5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DrEdit;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 9F7CDD7415FA5C7E0057FC5E /* Build configuration list for PBXProject "DrEdit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9F7CDD6F15FA5C7E0057FC5E;
+			productRefGroup = 9F7CDD7B15FA5C7E0057FC5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F7CDD7915FA5C7E0057FC5E /* DrEdit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F7CDD7815FA5C7E0057FC5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F7CDD8915FA5C7E0057FC5E /* InfoPlist.strings in Resources */,
+				9F7CDD9215FA5C7E0057FC5E /* MainStoryboard.storyboard in Resources */,
+				9F7CDDFB15FA687D0057FC5E /* GTMOAuth2Window.xib in Resources */,
+				9F7CDDFE15FA687D0057FC5E /* GTMOAuth2ViewTouch.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F7CDD7615FA5C7E0057FC5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F7CDD8B15FA5C7E0057FC5E /* main.m in Sources */,
+				9F7CDD8F15FA5C7E0057FC5E /* DrEditAppDelegate.m in Sources */,
+				9F7CDD9515FA5C7E0057FC5E /* DrEditFilesListViewController.m in Sources */,
+				9F7CDD9815FA5C7E0057FC5E /* DrEditFileEditViewController.m in Sources */,
+				9F7CDDE115FA687D0057FC5E /* GTLObject.m in Sources */,
+				9F7CDDE215FA687D0057FC5E /* GTLQuery.m in Sources */,
+				9F7CDDE315FA687D0057FC5E /* GTLBatchQuery.m in Sources */,
+				9F7CDDE415FA687D0057FC5E /* GTLService.m in Sources */,
+				9F7CDDE515FA687D0057FC5E /* GTLBatchResult.m in Sources */,
+				9F7CDDE615FA687D0057FC5E /* GTLUploadParameters.m in Sources */,
+				9F7CDDE715FA687D0057FC5E /* GTLDateTime.m in Sources */,
+				9F7CDDE815FA687D0057FC5E /* GTLErrorObject.m in Sources */,
+				9F7CDDE915FA687D0057FC5E /* GTLRuntimeCommon.m in Sources */,
+				9F7CDDEA15FA687D0057FC5E /* GTLFramework.m in Sources */,
+				9F7CDDEB15FA687D0057FC5E /* GTLJSONParser.m in Sources */,
+				9F7CDDEC15FA687D0057FC5E /* GTLUtilities.m in Sources */,
+				9F7CDDED15FA687D0057FC5E /* GTLBase64.m in Sources */,
+				9F7CDDEE15FA687D0057FC5E /* GTMHTTPFetcherService.m in Sources */,
+				9F7CDDEF15FA687D0057FC5E /* GTMHTTPFetcher.m in Sources */,
+				9F7CDDF015FA687D0057FC5E /* GTMHTTPFetcherLogging.m in Sources */,
+				9F7CDDF115FA687D0057FC5E /* GTMHTTPFetchHistory.m in Sources */,
+				9F7CDDF215FA687D0057FC5E /* GTMHTTPUploadFetcher.m in Sources */,
+				9F7CDDF315FA687D0057FC5E /* GTMGatherInputStream.m in Sources */,
+				9F7CDDF415FA687D0057FC5E /* GTMMIMEDocument.m in Sources */,
+				9F7CDDF515FA687D0057FC5E /* GTMReadMonitorInputStream.m in Sources */,
+				9F7CDDF615FA687D0057FC5E /* SBJsonBase.m in Sources */,
+				9F7CDDF715FA687D0057FC5E /* SBJsonParser.m in Sources */,
+				9F7CDDF815FA687D0057FC5E /* SBJsonWriter.m in Sources */,
+				9F7CDDF915FA687D0057FC5E /* GTMOAuth2Authentication.m in Sources */,
+				9F7CDDFA15FA687D0057FC5E /* GTMOAuth2SignIn.m in Sources */,
+				9F7CDDFC15FA687D0057FC5E /* GTMOAuth2WindowController.m in Sources */,
+				9F7CDDFD15FA687D0057FC5E /* GTMOAuth2ViewControllerTouch.m in Sources */,
+				9F7CDE4A15FA69CB0057FC5E /* GTLDriveAbout.m in Sources */,
+				9F7CDE4B15FA69CB0057FC5E /* GTLDriveApp.m in Sources */,
+				9F7CDE4C15FA69CB0057FC5E /* GTLDriveAppList.m in Sources */,
+				9F7CDE4D15FA69CB0057FC5E /* GTLDriveChange.m in Sources */,
+				9F7CDE4E15FA69CB0057FC5E /* GTLDriveChangeList.m in Sources */,
+				9F7CDE4F15FA69CB0057FC5E /* GTLDriveChildList.m in Sources */,
+				9F7CDE5015FA69CB0057FC5E /* GTLDriveChildReference.m in Sources */,
+				9F7CDE5115FA69CB0057FC5E /* GTLDriveConstants.m in Sources */,
+				9F7CDE5215FA69CB0057FC5E /* GTLDriveFile.m in Sources */,
+				9F7CDE5315FA69CB0057FC5E /* GTLDriveFileList.m in Sources */,
+				9F7CDE5415FA69CB0057FC5E /* GTLDriveParentList.m in Sources */,
+				9F7CDE5515FA69CB0057FC5E /* GTLDriveParentReference.m in Sources */,
+				9F7CDE5615FA69CB0057FC5E /* GTLDrivePermission.m in Sources */,
+				9F7CDE5715FA69CB0057FC5E /* GTLDrivePermissionList.m in Sources */,
+				9F7CDE5815FA69CB0057FC5E /* GTLDriveRevision.m in Sources */,
+				9F7CDE5915FA69CB0057FC5E /* GTLDriveRevisionList.m in Sources */,
+				9F7CDE5A15FA69CB0057FC5E /* GTLQueryDrive.m in Sources */,
+				9F7CDE5B15FA69CB0057FC5E /* GTLServiceDrive.m in Sources */,
+				9F7CDE6215FA6EF80057FC5E /* DrEditUtilities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9F7CDD8715FA5C7E0057FC5E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F7CDD8815FA5C7E0057FC5E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9F7CDD9015FA5C7E0057FC5E /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F7CDD9115FA5C7E0057FC5E /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F7CDD9915FA5C7E0057FC5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9F7CDD9A15FA5C7E0057FC5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F7CDD9C15FA5C7E0057FC5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrEdit/DrEdit-Prefix.pch";
+				INFOPLIST_FILE = "DrEdit/DrEdit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9F7CDD9D15FA5C7E0057FC5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrEdit/DrEdit-Prefix.pch";
+				INFOPLIST_FILE = "DrEdit/DrEdit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F7CDD7415FA5C7E0057FC5E /* Build configuration list for PBXProject "DrEdit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F7CDD9915FA5C7E0057FC5E /* Debug */,
+				9F7CDD9A15FA5C7E0057FC5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F7CDD9B15FA5C7E0057FC5E /* Build configuration list for PBXNativeTarget "DrEdit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F7CDD9C15FA5C7E0057FC5E /* Debug */,
+				9F7CDD9D15FA5C7E0057FC5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F7CDD7115FA5C7E0057FC5E /* Project object */;
+}
