@@ -195,7 +195,7 @@ public abstract class DrEditServlet extends HttpServlet {
       return credentialManager.get(userId);
     }
     return null;
-  };
+  }
 
   /**
    * Deletes the credentials of the user in the session permanently and removes

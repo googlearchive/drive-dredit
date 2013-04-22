@@ -10,3 +10,6 @@
 [submodule "ruby/assets/public"]
 	path = ruby/assets/public
 	url = git@github.com:googledrive/dredit-frontend.git
+[submodule "java/war/resources/public"]
+	path = java/war/resources/public
+	url = git@github.com:googledrive/dredit-frontend.git
