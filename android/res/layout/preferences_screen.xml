@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:title="@string/title_preferences"
+  android:persistent="true">
+
+  <Preference 
+    android:key="selected_account_preference"
+    android:title="@string/selected_account" />
+  <ListPreference 
+    android:key="sync_frequency_preference" 
+    android:title="@string/title_sync_frequency"
+    android:entries="@array/sync_frequency_labels"
+    android:entryValues="@array/sync_frequency_values"
+    android:defaultValue="@string/sync_frequency_default_value"
+    android:summary="Sync every %s" />
+</PreferenceScreen>
