@@ -1,15 +1,15 @@
 [submodule "php/public"]
 	path = php/public
-	url = git@github.com:googledrive/dredit-frontend.git
+	url = git://github.com/googledrive/dredit-frontend.git
 [submodule "python/public"]
 	path = python/public
-	url = git@github.com:googledrive/dredit-frontend.git
+	url = git://github.com/googledrive/dredit-frontend.git
 [submodule "java/war/public"]
 	path = java/war/public
-	url = git@github.com:googledrive/dredit-frontend.git
+	url = git://github.com/googledrive/dredit-frontend.git
 [submodule "ruby/assets/public"]
 	path = ruby/assets/public
-	url = git@github.com:googledrive/dredit-frontend.git
+	url = git://github.com/googledrive/dredit-frontend.git
 [submodule "java/war/resources/public"]
 	path = java/war/resources/public
-	url = git@github.com:googledrive/dredit-frontend.git
+	url = git://github.com/googledrive/dredit-frontend.git
