@@ -53,8 +53,8 @@ public class StartPageServlet extends DrEditServlet {
       if (state.ids != null && state.ids.size() > 0) {
         resp.sendRedirect("/#/edit/" + state.ids.toArray()[0]);
         return;
-      } else if (state.parentId != null) {
-        resp.sendRedirect("/#/create/" + state.parentId);
+      } else if (state.folderId != null) {
+        resp.sendRedirect("/#/create/" + state.folderId);
         return;
       }
     }

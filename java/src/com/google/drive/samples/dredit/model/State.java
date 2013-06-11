@@ -38,9 +38,9 @@ public class State {
   public Collection<String> ids;
 
   /**
-   * Parent ID related to the given action.
+   * Folder ID related to the given action.
    */
-  public String parentId;
+  public String folderId;
 
   /**
    * Empty constructor required by Gson.
@@ -58,6 +58,6 @@ public class State {
     State other = gson.fromJson(json, State.class);
     this.action = other.action;
     this.ids = other.ids;
-    this.parentId = other.parentId;
+    this.folderId = other.folderId;
   }
 }
