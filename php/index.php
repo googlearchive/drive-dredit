@@ -22,7 +22,7 @@
 require 'lib/Slim/Slim.php';
 require 'lib/apiclient/Google_Client.php';
 require 'lib/apiclient/contrib/Google_DriveService.php';
-require 'lib/apiclient/contrib/Google_OAuth2Service.php';
+require 'lib/apiclient/contrib/Google_Oauth2Service.php';
 require 'utils.php';
 require 'credentials.php';
 
@@ -135,7 +135,7 @@ $app->put('/svc', function() use ($app, $client, $service) {
  */
 $app->get('/user', function() use ($app, $client, $service) {
   checkUserAuthentication($app);
-  $userinfoService = new Google_OAuth2Service($client);
+  $userinfoService = new Google_Oauth2Service($client);
   try {
     $user = $userinfoService->userinfo->get();
     renderJson($app, $user);
