@@ -21,6 +21,6 @@ A walkthrough and more details are available on
 1. Create a session secret, which should be at least 64 bytes of random characters, for example with `python -c "import os; print os.urandom(64)" > session.secret`
 1. Modify `client_secrets.json` to replace the `client_id`, `client_secret`, and `redirect_uris` with the values from the [Google APIs Console](https://code.google.com/apis/console/) under the *API Access* tab for the project. **Note:** Make sure you use a valid **Client ID for web applications**.  Do *not* use the **Client ID for Drive SDK**, which is reserved for future feature development.
 1. Edit `app.yaml` and replace the value for the `application` setting with the identifier of the new Google App Engine application created in step 1.
-1. Deploy the App to App Engine as described in the [Google App Engine documentation](/appengine/docs/python/tools/uploadinganapp#Uploading_the_App).
+1. Deploy the App to App Engine as described in the [Google App Engine documentation](https://developers.google.com/appengine/docs/python/tools/uploadinganapp#Python_Uploading_the_app).
 1. Test the application.
 1. Continue reading to find out how DrEdit is constructed, and how to modify it to work for your own application's needs.
