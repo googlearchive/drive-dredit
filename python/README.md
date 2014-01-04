@@ -8,7 +8,8 @@ A walkthrough and more details are available on
 1. [Create a new Google App Engine application](https://appengine.google.com/)
 1. Clone DrEdit's git repo and init submodules:
 
-        git clone git@github.com:googledrive/dredit.git && cd dredit
+        git clone git@github.com:googledrive/dredit.git
+        cd dredit
         git submodule init
         git submodule update --recursive
         
