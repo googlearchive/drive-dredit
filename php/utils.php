@@ -34,7 +34,7 @@ function get_user() {
  */
 function set_user($tokens) {
   $_SESSION["user"] = json_encode(array(
-    tokens => $tokens
+    'tokens' => $tokens
   ));
 }
 
