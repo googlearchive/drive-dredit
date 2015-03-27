@@ -1,3 +1,9 @@
+**UPDATE** These examples have been deprecated and are no longer being updated. Current versions of this app can be found in the following repositories:
+
+* [Android Quickeditor](https://github.com/googledrive/android-quickeditor)
+* [iOS Quickeditor](https://github.com/googledrive/ios-quickeditor)
+* [Web Quickeditor](https://github.com/googledrive/web-quickeditor)
+
 # DrEdit
 
 DrEdit is a sample Google Drive app, is a text editor that is capable of editing files with `text/*` MIME type that are stored in user's Google Drive. It has similar implementations for Java, Python, PHP, .NET, Ruby, Android and iOS. DrEdit also implements two fundamental Google Drive use cases:
